@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/amili/StudioProjects/GDSC/app/src/main/res/layout/activity_main.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/amili/StudioProjects/GDSC/app/src/main/res/layout/fragment_field.xml" value="0.203125" />
+        <entry key="..\:/Users/amili/StudioProjects/GDSC/app/src/main/res/layout/fragment_select_policy.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/amili/StudioProjects/GDSC/app/src/main/res/layout/item.xml" value="0.11904761904761904" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/drawable-v24/ic_dashboard_black_24dp.xml" value="0.1955" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/layout/activity_login.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/layout/activity_main.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/layout/activity_sign_up.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/layout/fragment_dashboard.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/layout/fragment_my_information.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/layout/fragment_news.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/layout/fragment_select_policy.xml" value="0.3515625" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/layout/item_news.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/kimhongjin/AndroidStudioProjects/GDSC_project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/kimhongjin/Downloads/GDSC-main/GDSC-main/app/src/main/res/drawable-v24/ic_home_black_24dp.xml" value="0.2465" />
+        <entry key="..\:/Users/kimhongjin/Downloads/GDSC-main/GDSC-main/app/src/main/res/layout/activity_favorite.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kimhongjin/Downloads/GDSC-main/GDSC-main/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kimhongjin/Downloads/GDSC-main/GDSC-main/app/src/main/res/layout/fragment_field.xml" value="0.1875" />
+        <entry key="..\:/Users/kimhongjin/Downloads/GDSC-main/GDSC-main/app/src/main/res/layout/fragment_my_information.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kimhongjin/Downloads/GDSC-main/GDSC-main/app/src/main/res/layout/item.xml" value="0.33" />
+        <entry key="..\:/Users/kimhongjin/Downloads/GDSC-main/GDSC-main/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
