@@ -20,7 +20,7 @@ import com.example.gdsc_project.databinding.FragmentFieldBinding
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.item.view.*
 
-class FieldFragment : Fragment(){
+class FieldFragment : Fragment() {
     private var _binding: FragmentFieldBinding? = null
     var firestore: FirebaseFirestore? = null
     private lateinit var recyclerView: RecyclerView
@@ -48,23 +48,54 @@ class FieldFragment : Fragment(){
         val age = args.age  // 내가 썼던 나이
 
 
-        firestore?.collection("po")?.whereEqualTo("지원분야", result)?.whereEqualTo("지역",location)?.get()
+        firestore?.collection("po")?.whereEqualTo("지원분야", result)?.get()
             ?.addOnCompleteListener {
                 if (it.isSuccessful) {
                     for (snapshot in it.result!!.documents) {
                         val item = snapshot.toObject(policy::class.java)
-                        po.add(item!!)
+                        val recieve_loc = item?.지역.toString()
+                        val receive_age = item?.지원규모.toString()
+
+                        if (recieve_loc.contains(args.location.toString())) {
+                            if (receive_age != "제한없음") {
+                                if (receive_age.length <= 4) {
+                                    if (age.toString() == receive_age.substring(1, 3)) {
+                                        po.add(item!!)
+                                    }
+                                } else {
+                                    if (receive_age.substring(5, 7) == "이상") {
+                                        if (age?.toInt()!! >= receive_age.substring(1, 3).toInt()) {
+                                            po.add(item!!)
+                                        }
+                                    } else {
+                                        if (age!!.toInt() in receive_age.substring(1, 3)
+                                                .toInt()..receive_age.substring(5, 7).toInt()
+                                        ) {
+                                            po.add(item!!)
+                                        }
+                                    }
+                                }
+
+                            }
+                            if(receive_age =="제한없음"){
+                                po.add(item!!)
+                            }
+
+                            Log.d("나이", item?.지원규모.toString())
+                            Log.d("정책명", item?.지역.toString())
+                            Log.d("지원분야", item?.지원분야.toString())
+                        }
+                        recyclerView.adapter?.notifyDataSetChanged()
                     }
-                    recyclerView.adapter?.notifyDataSetChanged()
                 }
+
+
+
+                recyclerView.adapter = FieldAdapter(po)
+                recyclerView.layoutManager =
+                    LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+
             }
 
-
-
-        recyclerView.adapter = FieldAdapter(po)
-        recyclerView.layoutManager =
-            LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
-
     }
-
 }
